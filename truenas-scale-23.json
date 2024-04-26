@@ -538,7 +538,7 @@
           },
           "hide": false,
           "refId": "A",
-          "target": "aliasByMetric(aggregate(scale.$server.cputemp.temperatures.*, 'median'))"
+          "target": "aliasByNode(aggregate(scale.$server.cputemp.temperatures.*, 'median'), 3)"
         }
       ],
       "title": "cpu temperature",
@@ -791,7 +791,7 @@
               }
             ]
           },
-          "unit": "Bps"
+          "unit": "Kbits"
         },
         "overrides": [
           {
@@ -895,7 +895,7 @@
               }
             ]
           },
-          "unit": "Bps"
+          "unit": "Kbits"
         },
         "overrides": [
           {
@@ -1012,6 +1012,6 @@
   "timezone": "",
   "title": "truenas 23",
   "uid": "e4f3211b-311e-40f4-8617-9e4c87de73fb",
-  "version": 12,
+  "version": 14,
   "weekStart": ""
 }
